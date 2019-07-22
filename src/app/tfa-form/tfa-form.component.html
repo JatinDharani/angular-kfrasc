@@ -1,0 +1,155 @@
+<div class="col-md-8 order-md-1">
+	<h4 class="mb3">
+		Send TFA Request
+	</h4>
+  <div class="alert alert-info" role="alert">
+  Request status will be available on your personal center and we will be getting in touch with you.
+</div>
+
+<form [formGroup]="tfaForm" class="needs-validation" novalidate>
+	
+	<div class="row">
+		<div class="col-md-3 mb-3">
+	<label for="">
+    Asessment Type:
+    </label>
+    <select type="text" formControlName="asesstype" name="asesstype" id="asesstype" class="custom-select d-block w-100" >
+ <option *ngFor="let c of formstats.asesstype" [ngValue]="c">{{c.value}}</option>
+    </select>
+  
+</div>
+<div class="col-md-9 mb-3">
+  <label for="fcompname">
+    Full Company Name:
+    </label>
+    <div class="input-group  ">
+    <input type="text" id="fcompname" name="fcompname"  class="form-control" formControlName="fcompname"  />
+    
+    
+    </div>
+
+  
+</div>
+	</div>
+	
+
+<div class="row">
+<div class="col-md-6 mb-3">
+  <label for="fsiteaddr1">
+    Full Site Address(1):
+    </label>
+    <input type="text" id="fsiteaddr1" class="form-control" formControlName="fsiteaddr1"/>
+
+</div>
+<div class="col-md-6 mb-3">
+	<label for="fsiteaddr1">
+     Full Site Address(2):
+    </label>
+  <input type="text" id="fsiteaddr2" class="form-control" formControlName="fsiteaddr2"/>
+</div>
+    </div>
+    <div class="row">
+<div class="col-md-4 mb-3">
+  <label for="city">
+    city:
+    </label>
+    <input type="text" id="city" class="form-control" formControlName="city"/>
+
+</div>
+<div class="col-md-4 mb-3">
+	<label for="state">
+     state:
+    </label>
+  <input type="text" id="state" class="form-control" formControlName="state"/>
+</div>
+<div class="col-md-4 mb-3">
+    		<label for="country">
+     country:
+    </label>
+  <input type="text" id="country" class="form-control" formControlName="country"/>
+    	</div>
+    </div>
+
+    	
+   
+    <div class="mb-3">
+  <label for="prodname">
+    Product Name(s):
+    </label>
+    <input type="text" id="prodname" class="form-control" formControlName="prodname">
+  
+</div>
+    <div class="row">
+    	
+    	<div class="col-md-4 mb-3">
+    		<label for="onsitsalut">
+     Salutation:
+    </label>
+  
+   <select type="text" formControlName="onsitsalut" name="onsitsalut" id="onsitsalut" class="custom-select d-block w-100" >
+ <option *ngFor="let c of formstats.salutation" [ngValue]="c">{{c.value}}</option>
+    </select>
+  
+    	</div>
+    	<div class="col-md-4 mb-3">
+    		<label for="onsitfname">
+     First Name:
+    </label>
+  <input type="text" id="onsitfname" class="form-control" formControlName="onsitfname"/>
+    	</div>
+    	<div class="col-md-4 mb-3">
+    		<label for="onsitlname">
+     Last Name:
+    </label>
+  <input type="text" id="onsitlname" class="form-control" formControlName="onsitlname"/>
+    	</div>
+
+    </div>
+
+<div class="row">
+    	
+    	
+    	<div class="col-md-4 mb-3">
+    		<label for="onsitemail">
+     Email:
+    </label>
+  <input type="email" id="onsitemail" class="form-control" formControlName="onsitemail"/>
+    	</div>
+    	<div class="col-md-4 mb-3">
+    		<label for="onsitphn">
+     Phone no:
+    </label>
+  <input type="text" id="onsitphn" class="form-control" formControlName="onsitphn"/>
+    	</div>
+    </div>
+    <div class="row">
+    	
+    	
+    	<div class="col-md-4 mb-3">
+    		<label for="prefdat1">
+     Prefered Date(1):
+    </label>
+  <input type="Date" id="prefdat1" class="form-control" formControlName="prefdat1"/>
+    	</div>
+    	<div class="col-md-4 mb-3">
+    		<label for="prefdat2">
+     Prefered Date (2):
+    </label>
+  <input type="Date" id="prefdat2" class="form-control" formControlName="prefdat2"/>
+    	</div>
+    </div>
+    <hr class="mb-4"/>
+    <button class="btn btn-primary btn-md"  type="submit">Submit</button>
+   
+
+</form>
+ <hr class="mb-4"/>
+<div class="  alert alert-warning" role="alert">
+  <h6>Disclaimer</h6>
+  <p>
+    No commitment of business is confirmed in this process of TFA Assesment/TLS Audit request.</p><p>
+All business transaction decisions will be made by our Commercial Team who shall contact you shortly.
+  </p>
+</div>
+</div>
+

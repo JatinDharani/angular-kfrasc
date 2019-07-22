@@ -1,0 +1,8 @@
+{
+  "/V2*": {
+    "target": "https://services.odata.org/",
+    "secure": true
+  },
+   "changeOrigin": true,
+   "logLevel":"debug"
+}
